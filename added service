@@ -1,0 +1,29 @@
+public static int calEMI(double lamount, int duration, String typee, double ir) {
+
+if (typee == "Personal") 
+{
+	value = (int) (lamount / duration);
+} 
+else 
+{
+	int n=(12*duration);
+	double r=(ir/1200);
+	double value = lamount*r*(Math.pow((1+r), n))/(Math.pow((1+r), n)-1);
+	//(p*r*((1+r)^n)) / ((1+r)^n-1)
+}
+return value;
+}
+
+
+
+public static long calinterest(double lamount, int duration, double ir) {
+	if(damount==0)
+	{
+		return 0;
+	}
+	else
+	{
+		long value1 = (long) ((lamount / duration) * (ir) / 1200);
+		return value1;
+	}
+}
