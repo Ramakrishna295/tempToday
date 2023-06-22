@@ -97,16 +97,8 @@ public class service {
 	}
 
 	public static long complete(int duration, double damount, double lamount, double ir) {
-		
-		if(damount==0)
-		{
-			return 0;
-		}
-		else
-		{
-			long value2 = (long) (service.calinterest(lamount, duration, ir) + damount);
-			return value2;
-		}
+		long value2 = (long) (service.calinterest(lamount, duration, ir) + damount);
+		return value2;
 
 	}
 
