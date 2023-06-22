@@ -86,8 +86,15 @@ public class service {
 
 
 	public static long calinterest(double lamount, int duration, double ir) {
-		long value1 = (long) ((lamount / duration) * (ir) / 1200);
-		return value1;
+		if(damount==0)
+		{
+			return 0;
+		}
+		else
+		{
+			long value1 = (long) ((lamount / duration) * (ir) / 1200);
+			return value1;
+		}
 	}
 
 	public static double total(double lamount, int duration, double ir, double damount, String typee) {
