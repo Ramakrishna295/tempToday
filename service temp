@@ -67,6 +67,11 @@ public class service {
 
 	public static int calEMI(double lamount, int duration, String typee) {
 
+		if (typee == "Personal") {
+			value = (int) (lamount / duration);
+		} else {
+
+		}
 		value = (int) (lamount / duration);
 		return value;
 	}
